@@ -1,0 +1,190 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("../assets/GT Walsheim Pro Bold.ttf");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: myFirstFont;
+}
+
+.container {
+  background-color: #171517;
+  width: 100%;
+  height: 100vh;
+  margin: 0px auto;
+  padding-bottom: -20px;
+}
+.navbar,
+.hero {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0px auto;
+}
+.navbarWrapper {
+  padding-top: 30px;
+}
+.navbar {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 13px;
+  color: #171517;
+}
+.logo {
+  cursor: pointer;
+  font-size: 22px;
+}
+.navbar .button {
+  padding: 15px 40px;
+  border: none;
+  background: #171517;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero div {
+  width: 42%;
+}
+
+.hero h1 {
+  margin: 0px auto;
+  margin-top: 100px;
+  font-size: 50px;
+  line-height: 3.2rem;
+  color: #fff;
+}
+.hero p {
+  line-height: 1.7rem;
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+  margin: 20px auto;
+  margin-top: 20px;
+}
+.hero .button {
+  padding: 15px 40px;
+  border: none;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.hero .button a {
+  color: #171517;
+}
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+}
+@media (max-width: 1130px) {
+  .hero h1 {
+    margin-top: 70px;
+    font-size: 36px;
+    line-height: 2.5rem;
+  }
+  .hero p {
+    margin: 20px 0px 40px;
+    line-height: 1.5rem;
+    font-size: 16px;
+  }
+  .footer {
+    margin-top: 150px;
+
+    padding-bottom: 40px;
+
+    bottom: 0;
+  }
+}
+@media (max-width: 919px) {
+  .logo {
+    font-size: 24px;
+  }
+  .container {
+    height: auto;
+    text-align: center;
+  }
+  .navbar,
+  .hero {
+    width: 90%;
+  }
+  .navbarWrapper {
+    padding-top: 30px;
+  }
+  .navbar {
+    padding: 10px;
+  }
+  .logo {
+    cursor: pointer;
+  }
+  .navbar button {
+    padding: 10px 20px;
+  }
+  .hero button {
+    padding: 10px 20px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    line-height: 2.5rem;
+  }
+  .hero p {
+    margin: 20px 0px 40px;
+    line-height: 1.5rem;
+    font-size: 16px;
+  }
+  .hero div {
+    width: 100%;
+  }
+  .hero .button {
+    margin-bottom: 20px;
+  }
+  .footer {
+    margin-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 639px) {
+  .navbarWrapper {
+    padding-top: 20px;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    border-radius: 0px;
+    text-align: center;
+  }
+}
